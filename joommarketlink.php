@@ -45,6 +45,8 @@ class plgJoomGalleryJoomMarketLink extends JPlugin
                                                         'link'  => 'index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=%s'),
                               'hikashop'      => array( 'icon'  => 'media/com_hikashop/images/icons/icon-16-hikashop.png',
                                                         'link'  => 'index.php?option=com_hikashop&view=product&layout=show&product_id=%s'),
+                              'joomshopping'  => array( 'icon'  => 'media/joomgallery/images/basket.png',
+                                                        'link'  => 'index.php?option=com_jshopping&controller=cart&task=add&category_id=1&product_id=%s&lang=de'),
                               'other'         => array( 'icon'  => '',
                                                         'link'  => '')
                               );
@@ -123,7 +125,7 @@ class plgJoomGalleryJoomMarketLink extends JPlugin
 
     // Check we are manipulating a valid form
     $name = $form->getName();
-    if(!in_array($name, array(_JOOM_OPTION.'.image')))
+    if(!in_array($name, array(_JOOM_OPTION.'.image', _JOOM_OPTION.'.edit')))
     {
       return true;
     }
@@ -142,6 +144,10 @@ class plgJoomGalleryJoomMarketLink extends JPlugin
       case 'hikashop':
         JForm::addFieldPath(JPATH_ROOT.'/components/com_hikashop/fields');
         $form->setFieldAttribute('productid', 'type', 'selectproduct', 'marketlink');
+        break;
+      case 'joomshopping':
+        JForm::addFieldPath(JPATH_ROOT.'/components/com_joomshopping/fields');
+        $form->setFieldAttribute('productid', 'type', 'product', 'marketlink');
         break;
       default:
         // No changes, a simple text field will be used
@@ -163,7 +169,7 @@ class plgJoomGalleryJoomMarketLink extends JPlugin
   function onContentPrepareData($context, $data)
   {
     // Check if we are manipulating a valid form
-    if(!in_array($context, array(_JOOM_OPTION.'.image')))
+    if(!in_array($context, array(_JOOM_OPTION.'.image', _JOOM_OPTION.'.edit')))
     {
       return true;
     }
