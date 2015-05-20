@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="joomgallery">
+  <name>PLG_JOOMGALLERY_JOOMMARKETLINK</name>
+  <author>JoomlaGallery::ProjektTeam</author>
+  <creationDate>05/20/2015</creationDate>
+  <copyright>(C) 2012 - 2015 Open Source Matters. All rights reserved.</copyright>
+  <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+  <authorEmail>team@joomgallery.net</authorEmail>
+  <authorUrl>www.joomgallery.net</authorUrl>
+  <version>3.0</version>
+  <description>PLG_JOOMGALLERY_JOOMMARKETLINK_XML_DESCRIPTION</description>
+  <files>
+    <filename plugin="joommarketlink">joommarketlink.php</filename>
+    <filename>index.html</filename>
+    <filename>marketlink.xml</filename>
+  </files>
+  <languages folder="language">
+    <language tag="de-DE">de-DE/de-DE.plg_joomgallery_joommarketlink.ini</language>
+    <language tag="de-DE">de-DE/de-DE.plg_joomgallery_joommarketlink.sys.ini</language>
+    <language tag="en-GB">en-GB/en-GB.plg_joomgallery_joommarketlink.ini</language>
+    <language tag="en-GB">en-GB/en-GB.plg_joomgallery_joommarketlink.sys.ini</language>
+  </languages>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field
+          name="market"
+          type="list"
+          default="virtuemart"
+          label="PLG_JOOMGALLERY_JOOMMARKETLINK_FIELD_MARKET_LABEL"
+          description="PLG_JOOMGALLERY_JOOMMARKETLINK_FIELD_MARKET_DESC">
+          <option value="virtuemart">VirtueMart</option>
+          <option value="hikashop">HikaShop</option>
+          <option value="other">PLG_JOOMGALLERY_JOOMMARKETLINK_FIELD_MARKET_OTHER</option>
+        </field>
+        <field
+          name="icon"
+          type="text"
+          default=""
+          label="PLG_JOOMGALLERY_JOOMMARKETLINK_FIELD_ICON_LABEL"
+          description="PLG_JOOMGALLERY_JOOMMARKETLINK_FIELD_ICON_DESC"
+          size="70" />
+        <field
+          name="link"
+          type="text"
+          default=""
+          label="PLG_JOOMGALLERY_JOOMMARKETLINK_FIELD_LINK_LABEL"
+          description="PLG_JOOMGALLERY_JOOMMARKETLINK_FIELD_LINK_DESC"
+          size="70" />
+      </fieldset>
+    </fields>
+  </config>
+</extension>

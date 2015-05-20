@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="marketlink">
+		<fieldset
+      name="marketlink"
+			label="PLG_JOOMGALLERY_JOOMMARKETLINK_LABEL"
+		>
+      <field
+        name="productid"
+        type="text"
+        label="PLG_JOOMGALLERY_JOOMMARKETLINK_FIELD_PRODUCTID_LABEL"
+        description="PLG_JOOMGALLERY_JOOMMARKETLINK_FIELD_PRODUCTID_DESC" />
+		</fieldset>
+	</fields>
+</form>
