@@ -46,7 +46,7 @@ class plgJoomGalleryJoomMarketLink extends JPlugin
                               'hikashop'      => array( 'icon'  => 'media/com_hikashop/images/icons/icon-16-hikashop.png',
                                                         'link'  => 'index.php?option=com_hikashop&view=product&layout=show&product_id=%s'),
                               'joomshopping'  => array( 'icon'  => 'media/joomgallery/images/basket.png',
-                                                        'link'  => 'index.php?option=com_jshopping&controller=cart&task=add&category_id=1&product_id=%s&lang=de'),
+                                                        'link'  => 'index.php?option=com_jshopping&controller=cart&task=add&category_id=1&product_id=%s'),
                               'other'         => array( 'icon'  => '',
                                                         'link'  => '')
                               );
