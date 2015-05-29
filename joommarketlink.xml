@@ -31,6 +31,7 @@
           description="PLG_JOOMGALLERY_JOOMMARKETLINK_FIELD_MARKET_DESC">
           <option value="virtuemart">VirtueMart</option>
           <option value="hikashop">HikaShop</option>
+          <option value="joomshopping">JoomShopping</option>
           <option value="other">PLG_JOOMGALLERY_JOOMMARKETLINK_FIELD_MARKET_OTHER</option>
         </field>
         <field
