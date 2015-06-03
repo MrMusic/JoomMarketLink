@@ -145,10 +145,6 @@ class plgJoomGalleryJoomMarketLink extends JPlugin
         JForm::addFieldPath(JPATH_ROOT.'/components/com_hikashop/fields');
         $form->setFieldAttribute('productid', 'type', 'selectproduct', 'marketlink');
         break;
-      case 'joomshopping':
-        JForm::addFieldPath(JPATH_ROOT.'/components/com_joomshopping/fields');
-        $form->setFieldAttribute('productid', 'type', 'product', 'marketlink');
-        break;
       default:
         // No changes, a simple text field will be used
         break;
