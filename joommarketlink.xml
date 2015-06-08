@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="2.5" type="plugin" group="joomgallery">
+<extension version="2.5" type="plugin" group="joomgallery" method="upgrade">
   <name>PLG_JOOMGALLERY_JOOMMARKETLINK</name>
-  <author>JoomlaGallery::ProjektTeam</author>
-  <creationDate>06/05/2015</creationDate>
+  <author>JoomGallery::ProjektTeam</author>
+  <creationDate>06/08/2015</creationDate>
   <copyright>(C) 2012 - 2015 Open Source Matters. All rights reserved.</copyright>
   <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
   <authorEmail>team@joomgallery.net</authorEmail>
