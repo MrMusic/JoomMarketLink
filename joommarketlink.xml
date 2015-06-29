@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="2.5" type="plugin" group="joomgallery">
+<extension version="2.5" type="plugin" group="joomgallery" method="upgrade">
   <name>PLG_JOOMGALLERY_JOOMMARKETLINK</name>
-  <author>JoomlaGallery::ProjektTeam</author>
-  <creationDate>05/20/2015</creationDate>
+  <author>JoomGallery::ProjektTeam</author>
+  <creationDate>06/08/2015</creationDate>
   <copyright>(C) 2012 - 2015 Open Source Matters. All rights reserved.</copyright>
   <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
   <authorEmail>team@joomgallery.net</authorEmail>
   <authorUrl>www.joomgallery.net</authorUrl>
-  <version>3.0</version>
+  <version>3.1</version>
   <description>PLG_JOOMGALLERY_JOOMMARKETLINK_XML_DESCRIPTION</description>
   <files>
     <filename plugin="joommarketlink">joommarketlink.php</filename>
@@ -31,6 +31,7 @@
           description="PLG_JOOMGALLERY_JOOMMARKETLINK_FIELD_MARKET_DESC">
           <option value="virtuemart">VirtueMart</option>
           <option value="hikashop">HikaShop</option>
+          <option value="joomshopping">JoomShopping</option>
           <option value="other">PLG_JOOMGALLERY_JOOMMARKETLINK_FIELD_MARKET_OTHER</option>
         </field>
         <field
